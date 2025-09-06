@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1_Caesar.Core.Shared
 {
-    internal interface ICypherSource<T>
+    internal interface ICipherSource<T>
     {
         void SetLowercaseSource(IEnumerable<T> source);
         void SetUppercaseSource(IEnumerable<T> source);

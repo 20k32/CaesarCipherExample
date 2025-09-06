@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Lab1_Caesar.Core.Encryption
 {
-    internal interface IEncryptor<Tin, Tout, TDelta> : ICypherSource<TDelta>
+    internal interface IEncryptor<Tin, Tout, TDelta> : ICipherSource<TDelta>
         where Tin : IEnumerable<IEncriptable> 
         where Tout : IEnumerable<IEncryptionResult>
         where TDelta : IDelta

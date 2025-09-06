@@ -21,10 +21,10 @@ namespace Lab1_Caesar.Framework
             encryptor = new CaesarEncryptor();
             decryptor = new CaesarDecryptor();
 
-            ConfigureCeaserCypher();
+            ConfigureCeaserCipher();
         }
 
-        private static void ConfigureCeaserCypher()
+        private static void ConfigureCeaserCipher()
         {
             var elementCount = 'z' - 'a' + 1;
 
@@ -33,7 +33,7 @@ namespace Lab1_Caesar.Framework
 
             encryptor.SetLowercaseSource(lowercaseSourcee);
             encryptor.SetUppercaseSource(uppercaseSource);
-           
+
             decryptor.Configure(encryptor, elementCount);
         }
 
@@ -94,7 +94,7 @@ namespace Lab1_Caesar.Framework
                     {
                         Console.WriteLine($"Unable to encrypt such string: {userResult}.");
                     }
-                    
+
                     userResult = Console.ReadLine()!;
                 }
             }
